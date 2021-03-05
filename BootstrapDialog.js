@@ -10,7 +10,7 @@ import { classMap } from 'lit-html/directives/class-map';
  * 
  * See web-dialog for an alternative (https://github.com/andreasbm/web-dialog)
  */
-export class BootstrapDialog extends HTMLElement {
+export class LitDialog extends HTMLElement {
 
     constructor() {
         super();
