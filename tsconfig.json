@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "target": "esnext",
+    "module": "commonjs",
+    //"resolveJsonModule": true,
+    "strict": false,
+    // Point to the JSDoc typed sources when using modules from the ol package
+    "baseUrl": "./",
+    "paths": {
+    }
+  },
+  "exclude": [
+    "dist",
+    "test/"
+  ],
+  "include": [
+    "**/*.js",
+  ]
+}
