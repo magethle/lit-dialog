@@ -73,9 +73,11 @@ export class LitDialog extends HTMLElement {
         this.addEventListener('disconnected', this._handleDisconnect);
 
         //show backdrop
-        this.backdrop.classList.add('in');
-        this.modal.classList.add('in');
-        this.modal.style.display = 'block';        
+        Promise.resolve().then( _ => {
+            this.backdrop.classList.add('in');
+            this.modal.classList.add('in');
+            this.modal.style.display = 'block';        
+        });
 
         return new Promise((resolve, reject) => {
             this._resolvePromise = resolve;
