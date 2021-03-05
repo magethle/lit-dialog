@@ -24,6 +24,7 @@ export class LitDialog extends HTMLElement {
     }
 
     connectedCallback() {
+        
     }
 
     disconnectedCallback() {
@@ -120,8 +121,9 @@ export class LitDialog extends HTMLElement {
      * @api
      */
     reject(reason) {
-        this.removeDialog();
         this._rejectPromise(reason);
+        //call remove dialog afterwards as it will reject promise again (see _handleDisconnect)
+        this.removeDialog();
     }
 
     /**
@@ -130,8 +132,9 @@ export class LitDialog extends HTMLElement {
      * @param {any} value 
      */
     resolve(value) {
-        this.removeDialog();
         this._resolvePromise(value);
+        //call remove dialog afterwards as it will reject promise again (see _handleDisconnect)
+        this.removeDialog();
     }
 
     /**
