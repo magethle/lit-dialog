@@ -1,1 +1,1 @@
-export { LitDialog } from './BootstrapDialog.js';
+export { LitDialog } from './LitDialog.js';
