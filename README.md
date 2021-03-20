@@ -45,4 +45,4 @@ await result = new ConfirmDialog().open();
   
 Result:  
   
-![Preview](img\dialog-screenshot.png)
+![Preview](img/dialog-screenshot.png)
