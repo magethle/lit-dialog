@@ -2,6 +2,8 @@
 A simple webcomponent dialog using bootstrap's modal classes
   
 Example  
+  
+1. Define your dialog:  
 
 ```javascript
 import { html } from 'lit-html';
@@ -34,6 +36,8 @@ export class ConfirmDialog extends LitDialog {
 
 customElements.define('confirm-dialog', ConfirmDialog);
 ```  
+  
+2. Use it:
   
 ```javascript
 await result = new ConfirmDialog().open();
