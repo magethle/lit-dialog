@@ -42,3 +42,7 @@ customElements.define('confirm-dialog', ConfirmDialog);
 ```javascript
 await result = new ConfirmDialog().open();
 ```
+  
+Result:  
+  
+![](img\dialog-screenshot.png)
