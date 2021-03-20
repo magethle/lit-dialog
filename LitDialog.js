@@ -24,7 +24,7 @@ export class LitDialog extends HTMLElement {
     }
 
     connectedCallback() {
-        
+        this.update();
     }
 
     disconnectedCallback() {
