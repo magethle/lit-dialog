@@ -12,7 +12,11 @@ import { classMap } from 'lit-html/directives/class-map';
  */
 export class LitDialog extends HTMLElement {
 
-    constructor() {
+    /**
+     * 
+     * @param {'sm'|'lg'|null|undefined} size 
+     */
+    constructor(size) {
         super();
 
         /** 
@@ -20,7 +24,7 @@ export class LitDialog extends HTMLElement {
          * 
          * @type {'sm'|'lg'|null|undefined} 
          */
-        this.size = null; //'sm';
+        this.size = size; //'sm';
     }
 
     connectedCallback() {
@@ -93,7 +97,7 @@ export class LitDialog extends HTMLElement {
      * @returns {TemplateResult}
      */
     renderDialog() {
-        const sizeClass = {'modal-sm': this.size==='sm'};
+        const sizeClass = {'modal-sm': this.size==='sm', 'modal-lg': this.size==='lg'};
         return html`
             <div id="backdrop" class="modal-backdrop"></div>
             <div id="modal" class="modal fade" tabindex="-1" role="dialog">
