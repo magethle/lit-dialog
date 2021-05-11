@@ -9,6 +9,11 @@
  */
 export class LitDialog extends HTMLElement {
     /**
+     *
+     * @param {'sm'|'lg'|null|undefined} size
+     */
+    constructor(size: 'sm' | 'lg' | null | undefined);
+    /**
      * Dialog size, null for normal/default size
      *
      * @type {'sm'|'lg'|null|undefined}
