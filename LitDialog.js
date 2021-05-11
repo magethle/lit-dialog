@@ -101,8 +101,8 @@ export class LitDialog extends HTMLElement {
         return html`
             <div id="backdrop" class="modal-backdrop"></div>
             <div id="modal" class="modal fade" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div id="content" class="modal-content ${classMap(sizeClass)}">
+                <div class="modal-dialog ${classMap(sizeClass)}" role="document">
+                    <div id="content" class="modal-content">
                         ${this.renderContent()}
                     </div>
                 </div>
