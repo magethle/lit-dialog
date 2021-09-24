@@ -1,6 +1,6 @@
 {
   "name": "lit-dialog",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A dialog component using bootstrap's modal classes",
   "main": "index.js",
   "module": "index.js",
