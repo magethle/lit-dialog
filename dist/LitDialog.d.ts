@@ -49,7 +49,7 @@ export class LitDialog extends HTMLElement {
      * Should be implemented by implementing classes
      * @api
      */
-    renderContent(): TemplateResult;
+    renderContent(): TemplateResult<1>;
     /**
      * Reject (in case of cancellation or abortion) and close dialog
      * @param {any} reason
@@ -86,4 +86,4 @@ export class LitDialog extends HTMLElement {
      */
     _escKeyHandler(e: KeyboardEvent): void;
 }
-import { TemplateResult } from "lit-html";
+import { TemplateResult } from "lit/node_modules/lit-html";

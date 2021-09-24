@@ -2,10 +2,11 @@
   "compilerOptions": {
     "allowJs": true,
     "checkJs": true,
-    "target": "esnext",
+    "target": "ES5", //"esnext",
     "module": "commonjs",
+    "lib": ["es2015", "dom"],
     "declaration": true,
-    "emitDeclarationOnly": true,
+    //"emitDeclarationOnly": true,
     "outDir": "./dist",
     //"resolveJsonModule": true,
     "strict": false,

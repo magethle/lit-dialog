@@ -1,5 +1,5 @@
-import { html, render, TemplateResult } from 'lit-html';
-import { classMap } from 'lit-html/directives/class-map';
+import { html, render, TemplateResult } from 'lit';
+import { classMap } from 'lit/directives/class-map';
 
 /**
  * Dialog component using boostrap 3 markup/classes

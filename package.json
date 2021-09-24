@@ -1,6 +1,6 @@
 {
   "name": "lit-dialog",
-  "version": "1.0.9",
+  "version": "2.0.0",
   "description": "A dialog component using bootstrap's modal classes",
   "main": "index.js",
   "module": "index.js",
@@ -20,7 +20,7 @@
     "url": "https://github.com/magethle/lit-dialog"
   },
   "dependencies": {
-    "lit-html": "^1.3.0"
+    "lit": "^2.0.0"
   },
   "files": [
     "*.{js,js.map,d.ts}",
