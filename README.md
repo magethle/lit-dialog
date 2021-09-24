@@ -6,7 +6,7 @@ Example
 1. Define your dialog:  
 
 ```javascript
-import { html } from 'lit-html';
+import { html } from 'lit';
 import { LitDialog } from 'lit-dialog';
 
 export class ConfirmDialog extends LitDialog {
