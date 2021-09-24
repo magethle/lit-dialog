@@ -21,7 +21,7 @@ var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cook
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.LitDialog = void 0;
 var lit_1 = require("lit");
-var class_map_1 = require("lit/directives/class-map");
+var class_map_js_1 = require("lit/directives/class-map.js");
 /**
  * Dialog component using boostrap 3 markup/classes
  *
@@ -107,7 +107,7 @@ var LitDialog = /** @class */ (function (_super) {
      */
     LitDialog.prototype.renderDialog = function () {
         var sizeClass = { 'modal-sm': this.size === 'sm', 'modal-lg': this.size === 'lg' };
-        return lit_1.html(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n            <div id=\"backdrop\" class=\"modal-backdrop\"></div>\n            <div id=\"modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\">\n                <div class=\"modal-dialog ", "\" role=\"document\">\n                    <div id=\"content\" class=\"modal-content\">\n                        ", "\n                    </div>\n                </div>\n            </div>"], ["\n            <div id=\"backdrop\" class=\"modal-backdrop\"></div>\n            <div id=\"modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\">\n                <div class=\"modal-dialog ", "\" role=\"document\">\n                    <div id=\"content\" class=\"modal-content\">\n                        ", "\n                    </div>\n                </div>\n            </div>"])), class_map_1.classMap(sizeClass), this.renderContent());
+        return lit_1.html(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n            <div id=\"backdrop\" class=\"modal-backdrop\"></div>\n            <div id=\"modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\">\n                <div class=\"modal-dialog ", "\" role=\"document\">\n                    <div id=\"content\" class=\"modal-content\">\n                        ", "\n                    </div>\n                </div>\n            </div>"], ["\n            <div id=\"backdrop\" class=\"modal-backdrop\"></div>\n            <div id=\"modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\">\n                <div class=\"modal-dialog ", "\" role=\"document\">\n                    <div id=\"content\" class=\"modal-content\">\n                        ", "\n                    </div>\n                </div>\n            </div>"])), class_map_js_1.classMap(sizeClass), this.renderContent());
     };
     /**
      * Render dialog content.
